@@ -1,0 +1,242 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Variables ===> */
+
+:root 
+{
+    --background-color: hsl(30, 38%, 92%);
+    --text-color: hsl(228, 12%, 48%);
+    --title-color: hsl(212, 21%, 14%);
+    --btn-color: hsl(158, 36%, 37%);
+    --font-size-paragraph: 14px;
+}
+
+/* <=== Variables */
+
+/* Basic Styles ===> */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container 
+{
+    max-width: 1000px;
+    padding: 0 17px;
+    margin: auto;
+}
+
+/* <=== Basic Styles */
+
+main 
+{
+    margin-top: 125px;
+}
+
+.container .item
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: max-content;
+}
+
+.container .item .item-img
+{
+    flex-basis: 295px;
+}
+
+.container .item .item-img img 
+{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .item .item-img img.image-product-mobile
+{
+    display: none;
+}
+
+.container .item .item-content
+{
+    padding: 27px;
+    flex-basis: 290px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .item .item-content .category
+{
+    margin-bottom: 12px;
+}
+
+.container .item .item-content .category span
+{
+    text-transform: uppercase;
+    color: var(--text-color);
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.container .item .item-content h1,
+.container .item .item-content .price
+{
+    font-family: 'Fraunces', serif;
+}
+
+.container .item .item-content h1 
+{
+    color: var(--title-color);
+    margin-bottom: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container .item .item-content p
+{
+    color: var(--text-color);
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container .item .item-content .price 
+{
+    color: var(--btn-color);
+    margin-bottom: 25px;
+}
+
+.container .item .item-content .price span
+{
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.container .item .item-content .price del 
+{
+    position: relative;
+    font-size: 12px;
+    color: var(--text-color);
+    top: -7px;
+    text-decoration:line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.container .item .item-content .btn-add
+{
+    text-align: center;
+}
+
+.container .item .item-content .btn-add a 
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: var(--btn-color);
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.container .item .item-content .btn-add a img 
+{
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+@media (max-width: 610px)
+{
+    .container .item
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .item .item-img img.image-product-desktop
+    {
+        display: none;
+        
+    }
+
+    .container .item .item-img img.image-product-mobile
+    {
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container .item .item-img, .container .item .item-content
+    {
+        flex-basis: 0;
+    }
+
+    .container .item .item-content
+    {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* Footer Style ===> */
+
+footer
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: var(--shadow-color);
+}
+
+footer .attribution
+{
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+footer .attribution a 
+{
+    text-decoration: none;
+    font-weight: var(--bold);
+    color: #3685ff;
+}
+
+footer .attribution a:visited
+{
+    color: #3685ff;
+}
+
+@media (max-width: 610px)
+{
+    footer
+    {
+        position: static;
+        font-size: 14px;
+    }
+
+    main 
+    {
+        margin-top: 17px;
+    }
+
+}
+
+/* <=== Footer Style */
