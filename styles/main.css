@@ -55,7 +55,7 @@ main
 
 .container .item .item-img
 {
-    flex-basis: 295px;
+    flex-basis: 287px;
 }
 
 .container .item .item-img img 
@@ -82,7 +82,7 @@ main
 
 .container .item .item-content .category
 {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .container .item .item-content .category span
@@ -102,15 +102,15 @@ main
 .container .item .item-content h1 
 {
     color: var(--title-color);
-    margin-bottom: 17px;
+    margin-bottom: 21px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.0;
 }
 
 .container .item .item-content p
 {
     color: var(--text-color);
-    margin-bottom: 17px;
+    margin-bottom: 21px;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -134,9 +134,10 @@ main
     font-size: 12px;
     color: var(--text-color);
     top: -7px;
-    text-decoration:line-through;
+    text-decoration: line-through;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    left: 2px;
 }
 
 .container .item .item-content .btn-add
@@ -149,7 +150,7 @@ main
     display: block;
     color: white;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 12.5px 25px;
     background-color: var(--btn-color);
     border-radius: 7px;
     font-size: 14px;
